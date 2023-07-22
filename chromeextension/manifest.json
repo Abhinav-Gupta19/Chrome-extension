@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "CS50x final project extension",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "background": {
+        "service_workers": "background.js"
+    },
+    "icons":{
+        "16": "/images/pngwing.com (2) (1).png",
+        "48": "/images/pngwing.com (2) (2).png",
+        "128": "/images/pngwing.com (2) (3).png"
+    },
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "cs50 fan"
+    },
+    "permissions": ["tabs"]
+}
